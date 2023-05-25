@@ -458,22 +458,7 @@ h4.modal-title {
 					<tr>
 						<td>Количество:</td>
 						<td><input type="text" placeholder="Количество" class="form-leque-control input-leque-sm" value="" id="end-number" name="count"> </td>
-						<script>
-var input = document.getElementById('end-number');
-
-input.addEventListener('input', function() {
-  // Викликаємо функцію збереження даних через 3 секунди після вводу
-  setTimeout(saveData, 3000);
-});
-
-function saveData() {
-  // Отримуємо значення з поля вводу
-  var value = input.value;
-
-  // Зберігаємо значення в локальне сховище
-  localStorage.setItem('myData', value);
-}
-</script>
+						
 
 
 
