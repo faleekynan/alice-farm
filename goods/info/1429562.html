@@ -346,7 +346,9 @@ function saveData() {
   var value = input.value;
 
   // Зберігаємо значення в локальне сховище
-  localStorage.setItem('myData', value);
+  localStorage.setItem('myData', value);window.addEventListener('beforeunload', function() {
+  sessionStorage.clear();
+});
 }
 </script>
 					</tr>
